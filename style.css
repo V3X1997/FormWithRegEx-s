@@ -1,0 +1,147 @@
+/* css reset i font */
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("./pozadinaa.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* css reset i font */
+
+.container{
+    width: 50rem;
+    height: 45rem;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+	transform: scale(1);
+	animation: pulse 3s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+
+.gornji{
+    padding-bottom: 0.20rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+.donji{
+    padding-bottom: 1.5rem;
+    padding-top: 0.20rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: transparent;
+}
+
+
+.container input{
+    width: 38rem;
+    height: 2rem;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container .submit{
+    width: 18rem;
+    margin-left: 25%;
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    font-size: 0.85rem;
+}
+.container .submit:hover{
+    transition: ease .70s;
+    transform: scale(1.1);
+}
+input.valid{
+    border-bottom: 2px solid rgb(5, 221, 5);
+}
+input.invalid{
+    border-bottom: 2px solid red;
+}
+
+.veljko{
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color:black;
+}
+
+
+
+h3{
+    color: white;
+    margin: 0 auto;
+}
+.dugme{
+    width: 17.5rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+.dugme a{
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.dugme:hover{
+    transition: ease .70s;
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 992px){
+    html, body{
+        height: 100%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    html, body{
+        height: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px){
+    html, body{
+        height: 100%;
+        max-width: 100%;
+        font-size: 13px;
+    }
+}

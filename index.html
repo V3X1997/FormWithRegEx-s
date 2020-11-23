@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Forma sa RegExom</title>
+</head>
+<body>
+
+    <div class="container">
+        <form id="forma" class="forma">
+            <p class="gornji">Ime: </p>
+            <input type="text" name="firstName" autocomplete="off" onclick="document.getElementById('smernicaIme').style.color='white'">
+            <p class="donji" id="smernicaIme">3-13 karaktera (dozvoljena su i velika i mala slova)</p>
+
+            <p class="gornji">Prezime: </p>
+            <input type="text" name="lastName" autocomplete="off" onclick="document.getElementById('smernicaPrezime').style.color='white'">
+            <p class="donji" id="smernicaPrezime">3-13 karaktera (dozvoljena su i velika i mala slova)</p>
+
+            <p class="gornji">E-mail adresa:</p>
+            <input type="email" name="email" autocomplete="off" onclick="document.getElementById('smernicaEmail').style.color='white'">
+            <p class="donji" id="smernicaEmail">Email mora biti u validnom formatu</p>
+
+            <p class="gornji">Lozinka: </p> 
+            <input type="password" name="pass" autocomplete="off" onclick="document.getElementById('smernicaSifra').style.color='white'">
+            <p class="donji" id="smernicaSifra">8-18 karaktera alphanumerical (Obavezno: min 1 broj, min 1 slovo)</p>
+
+            <p class="gornji">Broj telefona: </p>
+            <input type="text" name="telephone" autocomplete="off" onclick="document.getElementById('smernicaMobilni').style.color='white'">
+            <p class="donji" id="smernicaMobilni">Mora biti u validnom telefonskom formatu primer: 061-111-1111</p>
+
+            <input type="submit" class="submit" value="Pošalji">
+        </form>
+        <p class="veljko">Made by Veljko K 2020.</p>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+
+</html>
